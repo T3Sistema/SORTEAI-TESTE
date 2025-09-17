@@ -143,8 +143,8 @@ export const mockPrizes: Prize[] = [
     { id: 'prize-3', name: 'Teclado Mecânico', companyId: 'comp-2' },
     { id: 'prize-4', name: 'Vale-Presente R$100', companyId: 'comp-2' },
     { id: 'prize-5', name: 'Cadeira Gamer', companyId: 'comp-2' },
-    { id: 'prize-6', name: 'gasolina', companyId: 'comp-3' },
-    { id: 'prize-7', name: '300 reais em voucher', companyId: 'comp-3' },
-    { id: 'prize-8', name: 'lavagem a seco', companyId: 'comp-3' },
-    { id: 'prize-9', name: 'ipva 2025 grátis', companyId: 'comp-3' },
+    { id: 'prize-6', name: 'Gasolina', companyId: 'comp-3' },
+    { id: 'prize-7', name: 'Voucher de R$300', companyId: 'comp-3' },
+    { id: 'prize-8', name: 'Lavagem a Seco', companyId: 'comp-3' },
+    { id: 'prize-9', name: 'IPVA 2025 Grátis', companyId: 'comp-3' },
 ];
