@@ -18,6 +18,15 @@ export const mockOrganizers: Organizer[] = [
         phone: '(21) 98888-2222',
         photoUrl: 'https://i.pravatar.cc/150?u=bob',
         organizerCode: 'GEB'
+    },
+    {
+        id: 'org-3',
+        name: 'Carango',
+        responsibleName: 'Fabio',
+        email: 'diretoria@carango.com.br',
+        phone: '82996180302',
+        photoUrl: 'https://aisfizoyfpcisykarrnt.supabase.co/storage/v1/object/public/prospectaifeedback/Screenshot%202025-08-25%20182827.png',
+        organizerCode: 'CRG'
     }
 ];
 
@@ -27,7 +36,7 @@ export const mockEvents: Event[] = [
         name: 'Tech Conference 2024',
         date: '2024-10-26',
         details: 'A conferência anual sobre as últimas tendências em tecnologia.',
-        bannerUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bannerUrl: 'https://images.unsplash.com/photo-1511578314322-379afb476865?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         organizerId: 'org-1',
     },
     {
@@ -35,8 +44,16 @@ export const mockEvents: Event[] = [
         name: 'Gamer Expo SP',
         date: '2024-11-15',
         details: 'O maior evento de games da América Latina.',
-        bannerUrl: 'https://images.unsplash.com/photo-1542751371-352e401c3366?q=80&w=2070&auto=format&fit=crop&ixlib-rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
+        bannerUrl: 'https://images.unsplash.com/photo-1542751371-352e401c3366?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
         organizerId: 'org-2',
+    },
+    {
+        id: 'event-3',
+        name: 'Seminovos em Alta Bradesco',
+        date: '2025-09-25',
+        details: 'Feirão de carros seminovos em parceria com o Bradesco.',
+        bannerUrl: 'https://aisfizoyfpcisykarrnt.supabase.co/storage/v1/object/public/prospectaifeedback/WhatsApp%20Image%202025-09-12%20at%2000.14.26.jpeg',
+        organizerId: 'org-3',
     }
 ];
 
@@ -97,13 +114,27 @@ export const mockCompanies: Company[] = [
         hasSorteio: true,
         hasRoleta: true,
         roletaColors: ['#6200EE', '#FFFFFF'],
+    },
+    {
+        id: 'comp-3',
+        name: 'Triad3',
+        responsibleName: 'Paulo',
+        phone: '',
+        email: 'paulo@triad3.io',
+        logoUrl: 'https://aisfizoyfpcisykarrnt.supabase.co/storage/v1/object/public/imagens/LOGO%20TRIAD3%20.png',
+        eventId: 'event-3',
+        code: 'T3',
+        hasSorteio: false,
+        hasRoleta: true,
+        roletaColors: ['#00D1FF', '#FFFFFF'],
     }
 ];
 
 export const mockCollaborators: Collaborator[] = [
     { id: 'collab-1', name: 'Peter Parker', phone: '(11) 91111-2222', email: 'peter@cloudsolutions.com', companyId: 'comp-1', code: 'PP01', photoUrl: 'https://i.pravatar.cc/150?u=peter' },
     { id: 'collab-2', name: 'Mary Jane Watson', phone: '(11) 91111-3333', email: 'mj@cloudsolutions.com', companyId: 'comp-1', code: 'MJ02', photoUrl: 'https://i.pravatar.cc/150?u=mj' },
-    { id: 'collab-3', name: 'Bruce Wayne', phone: '(21) 94444-5555', email: 'bruce@ghc.com', companyId: 'comp-2', code: 'BW01', photoUrl: 'https://i.pravatar.cc/150?u=bruce' }
+    { id: 'collab-3', name: 'Bruce Wayne', phone: '(21) 94444-5555', email: 'bruce@ghc.com', companyId: 'comp-2', code: 'BW01', photoUrl: 'https://i.pravatar.cc/150?u=bruce' },
+    { id: 'collab-4', name: 'Bob', phone: '', email: '', companyId: 'comp-3', code: 'T3B', photoUrl: 'https://aisfizoyfpcisykarrnt.supabase.co/storage/v1/object/public/prospectaifeedback/Screenshot%202025-08-25%20182827.png' }
 ];
 
 export const mockPrizes: Prize[] = [
@@ -112,4 +143,8 @@ export const mockPrizes: Prize[] = [
     { id: 'prize-3', name: 'Teclado Mecânico', companyId: 'comp-2' },
     { id: 'prize-4', name: 'Vale-Presente R$100', companyId: 'comp-2' },
     { id: 'prize-5', name: 'Cadeira Gamer', companyId: 'comp-2' },
+    { id: 'prize-6', name: 'gasolina', companyId: 'comp-3' },
+    { id: 'prize-7', name: '300 reais em voucher', companyId: 'comp-3' },
+    { id: 'prize-8', name: 'lavagem a seco', companyId: 'comp-3' },
+    { id: 'prize-9', name: 'ipva 2025 grátis', companyId: 'comp-3' },
 ];
